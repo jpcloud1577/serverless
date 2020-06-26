@@ -52,7 +52,7 @@ export const handler = async (event: APIGatewayProxyEvent): Promise<APIGatewayPr
 async function groupExists(groupId: string) {
   const result = await docClient
     .get({
-      TableName: groupsTable,
+      TableName: imagesTable,
       Key: {
         id: groupId
       }
